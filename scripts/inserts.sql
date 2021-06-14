@@ -54,6 +54,40 @@ insert into TelefonesFornecedores values('(85) 98213-1234',7);
 insert into TelefonesFornecedores values('(85) 99160-1234',7);
 insert into TelefonesFornecedores values('(85) 99990-7234',8);
 
+-- compra
+insert into Compra(id, data_compra, fk_fornecedor_id) values(1,'2020-01-11', 1); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(2,'2020-01-11', 2); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(3,'2020-01-11', 3); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(4,'2020-01-11', 4); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(5,'2020-01-11', 5); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(6,'2020-01-11', 6); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(7,'2020-01-11', 7); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(8,'2020-01-11', 8); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(9,'2020-01-11', 1); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(10,'2020-01-11', 2); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(11,'2020-01-11', 3); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(12,'2020-01-11', 4); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(13,'2020-01-11', 5); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(14,'2020-01-11', 6); 
+insert into Compra(id, data_compra, fk_fornecedor_id) values(15,'2020-01-11', 7); 
+
+-- relacao compra
+
+insert into RelacaoCompra values(200, 10.00, 1, 1); 
+insert into RelacaoCompra values(200, 10.00, 2, 2); 
+insert into RelacaoCompra values(200, 10.00, 3, 3); 
+insert into RelacaoCompra values(200, 10.00, 4, 4); 
+insert into RelacaoCompra values(200, 10.00, 5, 5); 
+insert into RelacaoCompra values(200, 10.00, 6, 6); 
+insert into RelacaoCompra values(200, 10.00, 7, 7); 
+insert into RelacaoCompra values(200, 10.00, 8, 8); 
+insert into RelacaoCompra values(200, 10.00, 9, 9); 
+insert into RelacaoCompra values(200, 10.00, 10, 10); 
+insert into RelacaoCompra values(200, 10.00, 11, 11); 
+insert into RelacaoCompra values(200, 10.00, 12, 12); 
+insert into RelacaoCompra values(200, 10.00, 13, 13); 
+insert into RelacaoCompra values(200, 10.00, 14, 14); 
+insert into RelacaoCompra values(200, 10.00, 15, 15); 
 
 -- Adicionar tipos de produtos
 insert into Tipos(descricao) values ("Limpeza");
@@ -63,21 +97,21 @@ insert into Tipos(descricao) values ("Higiene");
 insert into Tipos(descricao) values ("Bebidas");
 
 -- Adicionar produtos
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (1, "foto", "Detergente", "Limpa", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (2, "foto", "Sanduba", "Muito bom", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (3, "foto", "Martelo", "Bonk", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (4, "foto", "Escova", "Para os dentes", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (5, "foto", "Cerveja", "Hmmmm", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (1, "foto", "Água sanitária", "Limpa", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (2, "foto", "Queijo", "Queijinho", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (3, "foto", "Furadeira", "Fura", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (4, "foto", "Enxaguante", "Não pode engolir", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (5, "foto", "Vinho", "Chique", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (1, "foto", "Bombril", "Palha de aço", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (2, "foto", "Pizza", "De calabresa", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (3, "foto", "Alicate", "Não é de unha", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (4, "foto", "Fio dental", "Tem que usar", 5, 3);
-insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo) values (5, "foto", "Coca", "Coquinha gelada hmmmm", 5, 3);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (1, "foto", "Detergente", "Limpa", 200, 3, 10.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (2, "foto", "Sanduba", "Muito bom", 200, 3, 5.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (3, "foto", "Martelo", "Bonk", 200, 3, 10.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (4, "foto", "Escova", "Para os dentes", 200, 3, 70.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (5, "foto", "Cerveja", "Hmmmm", 200, 3, 60.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (1, "foto", "Água sanitária", "Limpa", 200, 3, 50.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (2, "foto", "Queijo", "Queijinho", 200, 3, 20.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (3, "foto", "Furadeira", "Fura", 200, 3, 50.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (4, "foto", "Enxaguante", "Não pode engolir", 200, 3, 30.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (5, "foto", "Vinho", "Chique", 200, 3, 10.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (1, "foto", "Bombril", "Palha de aço", 200, 3, 20.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (2, "foto", "Pizza", "De calabresa", 200, 3, 20.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (3, "foto", "Alicate", "Não é de unha", 2005, 3, 40.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (4, "foto", "Fio dental", "Tem que usar", 200, 3, 30.00);
+insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (5, "foto", "Coca", "Coquinha gelada hmmmm", 200, 3, 10.00);
 
 -- Adicionar clientes
 
@@ -133,28 +167,59 @@ insert into EmailsClientes values(13,'claudio@estatueiro.com',8);
 
 -- Adicionar venda
 
-insert into Venda(id, data_venda, fk_cliente_id) values (1, "2021-01-24", 1);
-insert into Venda(id, data_venda, fk_cliente_id) values (2, "2021-05-24", 1);
-insert into Venda(id, data_venda, fk_cliente_id) values (3, "2021-05-24", 2);
-insert into Venda(id, data_venda, fk_cliente_id) values (4, "2021-05-24", 2);
-insert into Venda(id, data_venda, fk_cliente_id) values (5, "2021-04-24", 3);
-insert into Venda(id, data_venda, fk_cliente_id) values (6, "2021-03-24", 4);
-insert into Venda(id, data_venda, fk_cliente_id) values (7, "2021-02-24", 5);
-insert into Venda(id, data_venda, fk_cliente_id) values (8, "2021-05-24", 6);
-insert into Venda(id, data_venda, fk_cliente_id) values (9, "2021-05-24", 7);
-insert into Venda(id, data_venda, fk_cliente_id) values (10, "2021-05-24", 8);
+insert into Venda(data_venda, fk_cliente_id) values ("2021-01-24", 1);
+insert into Venda(data_venda, fk_cliente_id) values ("2021-05-24", 1);
+insert into Venda(data_venda, fk_cliente_id) values ("2021-05-24", 2);
+insert into Venda(data_venda, fk_cliente_id) values ("2021-05-24", 2);
+insert into Venda(data_venda, fk_cliente_id) values ("2021-04-24", 3);
+insert into Venda(data_venda, fk_cliente_id) values ("2021-03-24", 4);
+insert into Venda(data_venda, fk_cliente_id) values ("2021-02-24", 5);
+insert into Venda(data_venda, fk_cliente_id) values ("2021-05-24", 6);
+insert into Venda(data_venda, fk_cliente_id) values ("2021-05-24", 7);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 8);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 8);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 8);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 8);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 3);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 4);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 5);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 6);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 7);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 7);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 6);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 5);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 4);
+
+
+
+
+
+
 
 -- Adicionar endereço venda
-insert into EnderecosVenda(id, fk_venda_id, logradouro, numero, complemento, uf) values(1, 1, "Av jose pereira", "455", "casa 13", "CE");
-insert into EnderecosVenda(id, fk_venda_id, logradouro, numero, complemento, uf) values(2, 2, "Av jose barbosa", "1235", "casa 45", "RN");
-insert into EnderecosVenda(id, fk_venda_id, logradouro, numero, complemento, uf) values(3, 3, "Av Oliveira Paiva", "3655", "apto 13", "PE");
-insert into EnderecosVenda(id, fk_venda_id, logradouro, numero, complemento, uf) values(4, 4, "Av duque de caxias", "55", "", "RJ");
-insert into EnderecosVenda(id, fk_venda_id, logradouro, numero, complemento, uf) values(5, 5, "Av antonio abre", "45", "", "SP");
-insert into EnderecosVenda(id, fk_venda_id, logradouro, numero, complemento, uf) values(6, 6, "Av Odilon Guimaraes", "4345", "", "SP");
-insert into EnderecosVenda(id, fk_venda_id, logradouro, numero, complemento, uf) values(7, 7, "rua nabucodonosor", "466", "", "RJ");
-insert into EnderecosVenda(id, fk_venda_id, logradouro, numero, complemento, uf) values(8, 8, "rua maestro Lisboa", "789", "casa 55", "RN");
-insert into EnderecosVenda(id, fk_venda_id, logradouro, numero, complemento, uf) values(9, 9, "rua na esquina", "900", "apto 34", "PE");
-insert into EnderecosVenda(id, fk_venda_id, logradouro, numero, complemento, uf) values(10, 10, "rua ali do lado", "978", "apto 55", "PB");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(1, "Av jose pereira", "455", "casa 13", "CE");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(2, "Av jose barbosa", "1235", "casa 45", "RN");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(3, "Av Oliveira Paiva", "3655", "apto 13", "PE");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(4, "Av duque de caxias", "55", "", "RJ");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(5, "Av antonio abre", "45", "", "SP");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(6, "Av Odilon Guimaraes", "4345", "", "SP");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(7, "rua nabucodonosor", "466", "", "RJ");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(8, "rua maestro Lisboa", "789", "casa 55", "RN");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(9, "rua na esquina", "900", "apto 34", "PE");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values( 10, "rua ali do lado", "978", "apto 55", "PB");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(1, "Av jose pereira", "455", "casa 13", "CE");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(2, "Av jose barbosa", "1235", "casa 45", "RN");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(3, "Av Oliveira Paiva", "3655", "apto 13", "PE");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(4, "Av duque de caxias", "55", "", "RJ");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(5, "Av antonio abre", "45", "", "SP");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(6, "Av Odilon Guimaraes", "4345", "", "SP");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(7, "rua nabucodonosor", "466", "", "RJ");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(8, "rua maestro Lisboa", "789", "casa 55", "RN");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(9, "rua na esquina", "900", "apto 34", "PE");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values( 10, "rua ali do lado", "978", "apto 55", "PB");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values( 10, "rua ali do lado", "978", "apto 55", "PB");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values( 10, "rua ali do lado", "978", "apto 55", "PB");
+insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values( 10, "rua ali do lado", "978", "apto 55", "PB");
 
 -- Adicionar relação venda
 
@@ -168,5 +233,18 @@ insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (40, 7, 
 insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (50, 8, 6);
 insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (60, 9, 7);
 insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (10, 10, 8);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 8, 5);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 8, 4);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 8, 2);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 8, 5);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 3, 4);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 4, 2);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (30, 5, 1);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (40, 6, 7);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (80, 7, 6);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (70, 7, 5);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (60, 6, 4);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (40, 5, 3);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (10, 4, 2);
 
 

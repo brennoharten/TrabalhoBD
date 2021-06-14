@@ -75,16 +75,17 @@ create table Tipos(
 );
 
 create table Produtos(
-	id int not null auto_increment,
-	fk_tipo_id int,
-	imagem_principal varchar(255),
-	nome varchar(255),
-	descricao varchar(255),
-	quantidade int,
-	minimo int,
-	primary key (id)
+        id int not null auto_increment,
+        fk_tipo_id int,
+        imagem_principal varchar(255),
+        nome varchar(255),
+        descricao varchar(255),
+        quantidade int,
+        minimo int,
+        valor decimal(9,2),
+        primary key (id),
+        check((quantidade) >= (minimo))
 );
-
 -- verificar se a relação e se precissa de id propio
 create table Produtos_img(
 	id int not null,
@@ -118,7 +119,7 @@ add foreign key(fk_produto_id)
 references Produtos(id);
 
 create table Venda(
-	id int not null,
+	id int not null auto_increment,
     data_venda datetime,
 	fk_cliente_id int,
 	primary key (id)
