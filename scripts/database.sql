@@ -38,6 +38,7 @@ create table EnderecosFornecedores (
     logradouro varchar(45),
     numero varchar(30),
     complemento varchar(45),
+    uf varchar(9),
     primary key(id)
 );
 
@@ -69,6 +70,7 @@ references Fornecedores(id);
 
 create table Tipos(
 	id int  not null auto_increment,
+    descricao varchar(255),
     primary key (id)
 );
 
@@ -123,9 +125,11 @@ create table Venda(
 )default charset utf8;
 
 create table RelacaoVenda(
+    id int not null auto_increment,
 	quantidade int not null,
     fk_venda_id int,
-    fk_produto_id int
+    fk_produto_id int,
+    primary key(id)
 );
 
 alter table RelacaoVenda
@@ -142,6 +146,7 @@ create table EnderecosVenda (
     logradouro varchar(45),
     numero varchar(30),
     complemento varchar(45),
+    uf varchar(9),
     primary key(id)
 );
 
@@ -180,6 +185,7 @@ create table EnderecosClientes(
 	numero varchar(20),
 	complemento varchar(45),
     fk_cliente_id int,
+    uf varchar(9),
     primary key (id)
 );
 
