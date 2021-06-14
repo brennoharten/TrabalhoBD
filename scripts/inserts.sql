@@ -232,19 +232,19 @@ insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (10, 6, 
 insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (40, 7, 5);
 insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (50, 8, 6);
 insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (60, 9, 7);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (10, 10, 8);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 8, 5);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 8, 4);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 8, 2);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 8, 5);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 3, 4);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 4, 2);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (30, 5, 1);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (40, 6, 7);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (80, 7, 6);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (70, 7, 5);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (60, 6, 4);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (40, 5, 3);
-insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (10, 4, 2);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (10, 10, 12);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 11, 15);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 12, 14);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 13, 12);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 14, 15);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 15, 4);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (20, 16, 2);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (30, 17, 12);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (40, 18, 13);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (80, 19, 6);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (70, 20, 5);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (60, 21, 4);
+insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (40, 22, 11);
+
 
 
