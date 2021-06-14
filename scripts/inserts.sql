@@ -134,15 +134,15 @@ insert into EmailsClientes values(13,'claudio@estatueiro.com',8);
 -- Adicionar venda
 
 insert into Venda(id, data_venda, fk_cliente_id) values (1, "2021-01-24", 1);
-insert into Venda(id, data_venda, fk_cliente_id) values (2, "2021-01-24", 1);
-insert into Venda(id, data_venda, fk_cliente_id) values (3, "2021-01-24", 2);
-insert into Venda(id, data_venda, fk_cliente_id) values (4, "2021-01-24", 2);
-insert into Venda(id, data_venda, fk_cliente_id) values (5, "2021-01-24", 3);
-insert into Venda(id, data_venda, fk_cliente_id) values (6, "2021-01-24", 4);
-insert into Venda(id, data_venda, fk_cliente_id) values (7, "2021-01-24", 5);
-insert into Venda(id, data_venda, fk_cliente_id) values (8, "2021-01-24", 6);
-insert into Venda(id, data_venda, fk_cliente_id) values (9, "2021-01-24", 7);
-insert into Venda(id, data_venda, fk_cliente_id) values (10, "2021-01-24", 8);
+insert into Venda(id, data_venda, fk_cliente_id) values (2, "2021-05-24", 1);
+insert into Venda(id, data_venda, fk_cliente_id) values (3, "2021-05-24", 2);
+insert into Venda(id, data_venda, fk_cliente_id) values (4, "2021-05-24", 2);
+insert into Venda(id, data_venda, fk_cliente_id) values (5, "2021-04-24", 3);
+insert into Venda(id, data_venda, fk_cliente_id) values (6, "2021-03-24", 4);
+insert into Venda(id, data_venda, fk_cliente_id) values (7, "2021-02-24", 5);
+insert into Venda(id, data_venda, fk_cliente_id) values (8, "2021-05-24", 6);
+insert into Venda(id, data_venda, fk_cliente_id) values (9, "2021-05-24", 7);
+insert into Venda(id, data_venda, fk_cliente_id) values (10, "2021-05-24", 8);
 
 -- Adicionar endereço venda
 insert into EnderecosVenda(id, fk_venda_id, logradouro, numero, complemento, uf) values(1, 1, "Av jose pereira", "455", "casa 13", "CE");
