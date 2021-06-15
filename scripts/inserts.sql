@@ -191,11 +191,6 @@ insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 5);
 insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 4);
 
 
-
-
-
-
-
 -- Adicionar endereço venda
 insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(1, "Av jose pereira", "455", "casa 13", "CE");
 insert into EnderecosVenda(fk_venda_id, logradouro, numero, complemento, uf) values(2, "Av jose barbosa", "1235", "casa 45", "RN");
@@ -245,6 +240,3 @@ insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (80, 19,
 insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (70, 20, 5);
 insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (60, 21, 4);
 insert into relacaoVenda(quantidade, fk_venda_id, fk_produto_id) values (40, 22, 11);
-
-
-
