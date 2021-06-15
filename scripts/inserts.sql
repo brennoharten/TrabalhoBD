@@ -71,24 +71,6 @@ insert into Compra(id, data_compra, fk_fornecedor_id) values(13,'2020-01-11', 5)
 insert into Compra(id, data_compra, fk_fornecedor_id) values(14,'2020-01-11', 6); 
 insert into Compra(id, data_compra, fk_fornecedor_id) values(15,'2020-01-11', 7); 
 
--- relacao compra
-
-insert into RelacaoCompra values(200, 10.00, 1, 1); 
-insert into RelacaoCompra values(200, 10.00, 2, 2); 
-insert into RelacaoCompra values(200, 10.00, 3, 3); 
-insert into RelacaoCompra values(200, 10.00, 4, 4); 
-insert into RelacaoCompra values(200, 10.00, 5, 5); 
-insert into RelacaoCompra values(200, 10.00, 6, 6); 
-insert into RelacaoCompra values(200, 10.00, 7, 7); 
-insert into RelacaoCompra values(200, 10.00, 8, 8); 
-insert into RelacaoCompra values(200, 10.00, 9, 9); 
-insert into RelacaoCompra values(200, 10.00, 10, 10); 
-insert into RelacaoCompra values(200, 10.00, 11, 11); 
-insert into RelacaoCompra values(200, 10.00, 12, 12); 
-insert into RelacaoCompra values(200, 10.00, 13, 13); 
-insert into RelacaoCompra values(200, 10.00, 14, 14); 
-insert into RelacaoCompra values(200, 10.00, 15, 15); 
-
 -- Adicionar tipos de produtos
 insert into Tipos(descricao) values ("Limpeza");
 insert into Tipos(descricao) values ("Alimento");
@@ -112,6 +94,24 @@ insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, 
 insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (3, "foto", "Alicate", "Não é de unha", 2005, 3, 40.00);
 insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (4, "foto", "Fio dental", "Tem que usar", 200, 3, 30.00);
 insert into Produtos(fk_tipo_id, imagem_principal, nome, descricao, quantidade, minimo, valor) values (5, "foto", "Coca", "Coquinha gelada hmmmm", 200, 3, 10.00);
+
+-- relacao compra
+
+insert into RelacaoCompra values(200, 10.00, 1, 1); 
+insert into RelacaoCompra values(200, 10.00, 2, 2); 
+insert into RelacaoCompra values(200, 10.00, 3, 3); 
+insert into RelacaoCompra values(200, 10.00, 4, 4); 
+insert into RelacaoCompra values(200, 10.00, 5, 5); 
+insert into RelacaoCompra values(200, 10.00, 6, 6); 
+insert into RelacaoCompra values(200, 10.00, 7, 7); 
+insert into RelacaoCompra values(200, 10.00, 8, 8); 
+insert into RelacaoCompra values(200, 10.00, 9, 9); 
+insert into RelacaoCompra values(200, 10.00, 10, 10); 
+insert into RelacaoCompra values(200, 10.00, 11, 11); 
+insert into RelacaoCompra values(200, 10.00, 12, 12); 
+insert into RelacaoCompra values(200, 10.00, 13, 13); 
+insert into RelacaoCompra values(200, 10.00, 14, 14); 
+insert into RelacaoCompra values(200, 10.00, 15, 15); 
 
 -- Adicionar clientes
 
@@ -176,19 +176,19 @@ insert into Venda(data_venda, fk_cliente_id) values ("2021-03-24", 4);
 insert into Venda(data_venda, fk_cliente_id) values ("2021-02-24", 5);
 insert into Venda(data_venda, fk_cliente_id) values ("2021-05-24", 6);
 insert into Venda(data_venda, fk_cliente_id) values ("2021-05-24", 7);
-insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 8);
-insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 8);
-insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 8);
-insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 8);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 1);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-01-24", 3);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-01-24", 2);
+insert into Venda(data_venda, fk_cliente_id) values ("2019-01-24", 8);
 insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 3);
-insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 4);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-01-24", 4);
 insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 5);
-insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 6);
-insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 7);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-02-24", 6);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 3);
 insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 7);
 insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 6);
 insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 5);
-insert into Venda(data_venda, fk_cliente_id) values ("2020-03-24", 4);
+insert into Venda(data_venda, fk_cliente_id) values ("2020-05-24", 4);
 
 
 -- Adicionar endereço venda
