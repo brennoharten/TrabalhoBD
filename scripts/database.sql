@@ -86,6 +86,7 @@ create table Produtos(
         primary key (id),
         check((quantidade) >= (minimo))
 );
+
 -- verificar se a relação e se precissa de id propio
 create table Produtos_img(
 	id int not null,
@@ -156,11 +157,11 @@ add foreign key(fk_venda_id)
 references Venda(id);
 
 create table Clientes(
- id int not null auto_increment,
- nome varchar(45),
- cpf varchar(11),
- msg_promo boolean,
- primary key (id)
+    id int not null auto_increment,
+    nome varchar(45),
+    cpf varchar(11),
+    msg_promo boolean,
+    primary key (id)
 );
 
 alter table Venda

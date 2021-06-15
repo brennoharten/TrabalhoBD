@@ -1,5 +1,4 @@
 -- 1. Relatório com todos os produtos vendidos no último mês, agrupado por estado de destino;
-
 select p.nome as "produto", ev.uf as "estado de destino" from
 produtos as p join relacaovenda rv on (rv.fk_produto_id = p.id) join 
 venda as v on (rv.fk_venda_id = v.id) join 
